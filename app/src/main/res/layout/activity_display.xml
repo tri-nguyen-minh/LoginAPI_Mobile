@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btnTestToken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW GRADE"
+        android:textSize="20sp"
+        android:paddingVertical="10dp"/>
+
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW GRADE V.2"
+        android:textSize="20sp"
+        android:paddingVertical="10dp"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW GRADE"
+        android:textSize="20sp"
+        android:paddingVertical="10dp"/>
+
+</LinearLayout>
