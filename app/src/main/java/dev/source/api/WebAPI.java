@@ -24,8 +24,8 @@ import dev.source.model.User;
 
 public class WebAPI implements API {
 
-    public static final String BASE_URL_LOGIN = "http://10.0.2.2:5000/login";
-    public static final String BASE_URL_GET = "http://10.0.2.2:5000/accounts";
+    public static final String BASE_URL_LOGIN = "http://192.168.1.79:3000/api/users/login";
+    public static final String BASE_URL_GET = "http://192.168.1.79:3000/api/";
 
     private RequestQueue requestQueue;
 
@@ -61,6 +61,7 @@ public class WebAPI implements API {
 
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    System.out.println(error);
                     System.out.println("Test onErrorResponse");
                 }
             };
@@ -112,6 +113,7 @@ public class WebAPI implements API {
                 @Override
                 public Map<String, String> getHeaders() throws AuthFailureError {
                     Map<String, String> header = new HashMap<>();
+                    header.put("cookie",token);
                     header.put("Authorization", "Bearer " + token);
                     return header;
                 }
